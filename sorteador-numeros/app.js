@@ -9,6 +9,10 @@ function sortear() {
    
     for (let  i = 0; i < quantidade; i++){
         numero = sorteador(de, ate)
+
+        while(sorteados.includes(numero)){
+        numero = sorteador(de , ate);
+        }
         sorteados.push(numero);
     }
 
@@ -23,4 +27,3 @@ function sorteador(min , max) {
     
 }
     
-
