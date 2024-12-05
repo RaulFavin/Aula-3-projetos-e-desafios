@@ -3,14 +3,38 @@ function sortear() {
     let de = parseInt(document.getElementById('de').value);
     let ate = parseInt(document.getElementById('ate').value);
 
-    if(quantidade >(ate - de +1)) {
-        alert("A quantidade n pode ser maior que o outro burro")
-        return
-    }
+    // if(quantidade >(ate - de +1)) {
+    //     alert("A quantidade n pode ser maior que o outro burro")
+    //     return;
+    // }
+    
+    
+    // if (isNaN(quantidade) || isNaN(de) || isNaN(ate)) {
+    //     alert("Por favor, preencha todos os campos com valores numéricos.");
+    //     return;
+    // }
+
+    // if (quantidade > 20) {
+    //     alert("A quantidade de números sorteados não pode ser maior que 20.");
+    //     return;
+    // }
+
+    // if (de >= ate) {
+    //     alert("O valor 'Do número' deve ser menor que 'Até o número'.");
+    //     return;
+    // }
+
+    // if (quantidade > (ate - de + 1)) {
+    //     alert("A quantidade de números sorteados não pode ser maior que o intervalo disponível.");
+    //     return;
+    // }
 
     let sorteados = [];
     let numero;
-   
+    if(quantidade + sorteados.length >= 20){
+        alert(`Maximo atingido`)
+        return;
+    }
     for (let  i = 0; i < quantidade; i++){
         numero = sorteador(de, ate)
 

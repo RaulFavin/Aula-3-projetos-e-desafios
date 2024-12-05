@@ -122,6 +122,7 @@ h1 {
 }
 
 .texto__paragrafo {
+    white-space:pre;
     color: #FFF;
     font-family: 'Inter';
     font-size: 32px;
