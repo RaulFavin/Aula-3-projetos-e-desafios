@@ -14,24 +14,24 @@ function sortear() {
     //     return;
     // }
 
-    // if (quantidade > 20) {
-    //     alert("A quantidade de números sorteados não pode ser maior que 20.");
-    //     return;
-    // }
+    if (quantidade > 20) {
+        alert("A quantidade de números sorteados não pode ser maior que 20.");
+        return;
+    }
 
-    // if (de >= ate) {
-    //     alert("O valor 'Do número' deve ser menor que 'Até o número'.");
-    //     return;
-    // }
+    if (de >= ate) {
+        alert("O valor 'Do número' deve ser menor que 'Até o número'.");
+        return;
+    }
 
-    // if (quantidade > (ate - de + 1)) {
-    //     alert("A quantidade de números sorteados não pode ser maior que o intervalo disponível.");
-    //     return;
-    // }
+    if (quantidade > (ate - de + 1)) {
+        alert("A quantidade de números sorteados não pode ser maior que o intervalo disponível.");
+        return;
+    }
 
     let sorteados = [];
     let numero;
-    if(quantidade + sorteados.length >= 20){
+    if(quantidade + sorteados.length > 20){
         alert(`Maximo atingido`)
         return;
     }
