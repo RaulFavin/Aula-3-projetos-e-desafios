@@ -1,10 +1,13 @@
 let total = 0 ; 
+document.getElementById('lista-produtos').innerHTML = ' ';
+document.getElementById('valor-total').innerText = 'R$0.00';
+document.getElementById('quantidade').value = 1;
 
 function adicionar() {
     let produto = document.getElementById('produto').value;
     let nomeProduto = produto.split('-')[0];   
     //let valorUnitario = produto.split('R$')[1];
-    let valorUnitario = parseInt(produto.split('R$')[1].replace(',', '.')); // Converte para número
+    let valorUnitario = parseFloat(produto.split('R$')[1].replace(',', '.')); // Converte para número
     let quantidade = parseInt(document.getElementById('quantidade').value);
     let preco = quantidade * valorUnitario;
     let carrinho = document.getElementById('lista-produtos');
@@ -13,11 +16,20 @@ function adicionar() {
           <span class="texto-azul">${quantidade}x</span>${nomeProduto}<span class="texto-azul">R$${preco.toFixed(2)}</span>
         </section>
       </section>`;
-    total = total + preco ;
-    
+    total += preco;
+    let campoTotal = document.getElementById('valor-total').innerText = `R$${total.toFixed(2)}`;
+    document.getElementById('quantidade').value = '1';
   
 }
 
 function limpar() {
-    
+    // document.getElementById('quantidade').value = '';
+    // document.getElementById('lista-produtos').innerHTML = '';
+    // total = 0;
+    // document.getElementById('valor-total').innerText = "R$0.00";
+
+    let total = 0 ; 
+    document.getElementById('lista-produtos').innerHTML = ' ';
+    document.getElementById('valor-total').innerText = 'R$0.00';
+    document.getElementById('quantidade').value = 1;
 }
