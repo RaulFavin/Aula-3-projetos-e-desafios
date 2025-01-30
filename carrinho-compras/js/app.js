@@ -1,8 +1,5 @@
-let total = 0 ; 
-document.getElementById('lista-produtos').innerHTML = ' ';
-document.getElementById('valor-total').innerText = 'R$0.00';
-document.getElementById('quantidade').value = 1;
-
+let total; 
+limpar();
 function adicionar() {
     let produto = document.getElementById('produto').value;
     let nomeProduto = produto.split('-')[0];   
@@ -28,7 +25,7 @@ function limpar() {
     // total = 0;
     // document.getElementById('valor-total').innerText = "R$0.00";
 
-    let total = 0 ; 
+    total = 0 ; 
     document.getElementById('lista-produtos').innerHTML = ' ';
     document.getElementById('valor-total').innerText = 'R$0.00';
     document.getElementById('quantidade').value = 1;
