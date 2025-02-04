@@ -6,3 +6,11 @@ function retornarNumeros(a, b, c) {
 }
 
 retornarNumeros(5, 12 ,6)
+
+function soma(a, b ,c) {
+   
+ console.log(a + b + c)
+
+}
+
+soma(10, 20 , 1);

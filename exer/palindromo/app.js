@@ -49,3 +49,10 @@ function essaPalavraEPalindromo() {
      }
 }
 
+const duasFrases = " O rato roueu a roupa do rei de roma, O rei de roma. taratra";
+const separador = duasFrases.split(',');
+console.log(separador);
+
+const numerAseparar = 10 ,20 ,30 ,40;
+const numerosSeparados = numerAseparar.split(',')
+console.log(numerosSeparados);
