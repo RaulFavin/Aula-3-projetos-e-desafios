@@ -1,4 +1,4 @@
-let celsius = " ";
+let celsius = null;
 let fahrenheit = "77";
 
 
@@ -17,7 +17,7 @@ function FahreTocelsius(fahrenheit) {
 //FahreTocelsius(77);
 
 function conversor() {
-    if (celsius == " ") {
+    if (!celsius) {
         celsius = (fahrenheit - 32) * 5/9;
         console.log(celsius);
     }else{
