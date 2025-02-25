@@ -1,6 +1,5 @@
 let minhaListas = [1, 1, 2, 3];
-let outraLista= [4, 5, 5, 4, 6];
-
+let outraLista = [4, 5, 5, 4, 6];
 let novaLista = minhaListas.concat(outraLista);
 //console.log(novaLista);
 
@@ -26,3 +25,4 @@ function removerDuplicatas(array) {
     return resultado;
 }
 console.log(removerDuplicatas(novaLista));
+
