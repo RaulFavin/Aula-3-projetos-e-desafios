@@ -18,9 +18,6 @@ function hoursToDayClasses(time) {
     return Math.floor(time / 3);
 }
 
-function dayClassesToDays(time) {
-    return Math.floor((time * 3) / 24);
-}
 
 function conversor() {
     let time = parseFloat(prompt('Enter the time:'));
@@ -35,8 +32,8 @@ function conversor() {
     } else if (unit === 'minutes') {
         result = `${time} minutes is equivalent to ${minToHours(time)} hours.`;
     } else if (unit === 'day classes') {
-        let days = dayClassesToDays(time);
-        result = `${time} day classes is equivalent to ${days} full days (considering each day class as 3 hours).`;
+        let days = hoursToDayClasses(time);
+        result = `${time} hours classes is equivalent to ${days}.`;
     } else {
         result = 'Invalid unit';
     }
