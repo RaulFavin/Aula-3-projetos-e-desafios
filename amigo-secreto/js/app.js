@@ -129,6 +129,8 @@ function reiniciar() {
     document.getElementById('nome-amigo').value = '';
 }
 
+console.log("Myri guapa");
+
 // function removerDuplicatas(array) {
 //     let resultado = [];
 //     for (let i = 0; i < array.length;  i++){
