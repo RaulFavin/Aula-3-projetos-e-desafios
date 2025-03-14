@@ -9,3 +9,11 @@ function stringTovalidateCheck(){
 
 }
 stringTovalidateCheck();
+
+function stringCheckOperadorTernario() {
+    let result = stringTovalidate === '' ? 'Empty string' : 'String is not empty';
+    alert(result);
+    
+}
+
+stringCheckOperadorTernario();
